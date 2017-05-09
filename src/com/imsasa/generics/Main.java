@@ -20,9 +20,7 @@ public class Main {
             add("String 4");
         }};
 
-        for (String s : listOfStrings) {
-            stack.push(s);
-        }
+        listOfStrings.forEach(stack::push);
         // iterate print and pop  strings
         while (!stack.isEmpty()) {
             System.out.println(stack.pop().toUpperCase());
